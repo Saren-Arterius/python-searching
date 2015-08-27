@@ -25,7 +25,6 @@ def df_search(from_word, to_word, visited=[]):
             visited.append(word)
             return visited
         path = df_search(word, to_word, visited.copy())
-        print(visited)
         if path is None:
             continue
         return path
